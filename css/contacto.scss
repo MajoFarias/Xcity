@@ -1,0 +1,102 @@
+.contact-intro{
+	padding:100px 15%;
+	h3{
+	}
+	.emphasize{
+		margin-left:37px;
+		&:before{
+			background-color:$yellow;
+		}
+	}
+}
+
+
+.completar{
+	background-color: transparent;
+    border: 2px solid;
+    border-color: #f3e100;
+    color: white;
+    float: right !important;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+   	padding-top: 10px;
+   	margin-top:-15px;
+   	margin-left:0px;
+   	@include gobold;
+   	font-size:22px;
+   	-webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    transform: skew(-45deg);
+    margin-right: 15px;
+    @media (max-width:1200px){
+    	width:250px;
+    }
+    @media (max-width:768px){
+    	float: left !important;
+    }
+	    span{
+	    -webkit-transform: skew(45deg);
+	    -moz-transform: skew(45deg);
+	    -o-transform: skew(45deg);
+	    transform: skew(45deg);
+	    display: inline-block;
+	    }
+
+}
+
+
+.contact-form{
+	background-color:#202020;
+	padding-top:100px;
+	padding-bottom:100px;
+	form{
+		.form-group{
+			input, textarea{
+				font-size:16px;
+		    	font-weight:500;
+		    	font-family: 'Avenir';
+		    	color:white;
+			}
+			input::placeholder, textarea::placeholder{
+				@include gobold;
+			    letter-spacing: 6px;
+			    color: #545454;
+			    font-size: 22px;
+		    }
+		    .form-control{
+		    	background-color: transparent;
+		    	border-radius:0;
+		    	border: none;
+    			border-bottom: 1px solid #545454;
+    			margin-bottom: 50px;
+    			font-size: 20px;
+		    }
+		    .form-control:focus{
+		    	box-shadow: 0 0 0 0rem transparent;
+		    	border-bottom: 1px solid $yellow;
+		    }
+    	}
+	    .form-check{
+	    	margin-left: 20px;
+
+	    	.form-check-label{
+	    		a{
+		    	letter-spacing:1px;
+		    	font-size:16px;
+		    	font-weight:100;
+		    	font-family: 'Avenir';
+		    	color:$yellow;
+		    	text-decoration:underline;
+		    	margin-left: 12px;
+		    	padding-bottom:20px;
+		    	}
+			}
+	    }
+		.button-contact{
+			margin-top:60px;
+		}
+
+    }
+}

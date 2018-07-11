@@ -1,0 +1,239 @@
+.embajador{
+	@include flexFlow;
+	align-items: center;
+	// @media (max-width:1160px){
+	// 		position:relative;
+	// 	}
+	article{
+		position: relative;
+		// @media (max-width:1160px){
+		// 	position:initial;
+		// }
+	}
+	article:nth-child(1){
+		padding:140px 0;
+		width:53%;
+		@media (max-width:1160px){
+			width:45%;
+		}
+		@media (max-width:992px){
+			width:100%;
+			padding:0;
+			// @include order(2);
+		}
+		.square{
+			width: 80%;
+		    height: 100%;
+		    position: absolute;
+		    right: 0%;
+		    top: 0;
+		    z-index: -9;
+		    background-color:$yellow;
+		    @media (max-width:992px){				
+				display:none;
+		    }
+		}
+		.img-embajador{
+			overflow: hidden;
+   			width: 90%;
+   			@media (max-width:992px){
+				width: 100%;
+				position:absolute;
+				height: 500px;
+			}
+			img{
+				width:880px;
+				@media (max-width:1720px){
+					transform: translateX(-9%);
+				}
+				@media (max-width:1480px){
+					transform: translateX(-19%);
+				}
+				@media (max-width:1280px){
+					transform: translateX(-33%);
+				}
+				@media (max-width:992px){
+					width: 100%;
+    				transform: translateX(0%);
+				}
+			}
+		}
+	}
+	article:nth-child(2){
+		width:47%;
+		padding:0px 15% 0px 5%;
+		background:white;
+		@media (max-width:1820px){
+			padding:0px 10% 0px 5%;
+		}
+		@media (max-width:1280px){
+			padding: 0px 5% 0px 5%;
+		}
+		@media (max-width:1160px){
+			width:55%;
+		}
+		@media (max-width:992px){
+		    padding: 60px 5%;
+		    background-color: #f3e100;
+		    width: 80%;
+		   	margin: 240px auto 9%;
+		    z-index: 9;
+		    height: initial;
+		}
+		@media (max-width:480px){
+			width:90%;
+			margin:180px auto 9%;
+		}
+		h3{
+			font-family: 'Gobold', sans-serif;
+		    font-size: 50px;
+		    line-height: 75px;
+		    text-transform: uppercase;
+		    letter-spacing: 25px;
+		    color: black;
+		    @media (max-width:1280px){
+		    	font-size: 40px;
+    			line-height: 50px;
+		    }
+		    @media (max-width:992px){
+		    	font-size: 31px;
+			    line-height: 43px;
+			    letter-spacing: 15px;
+		    }
+		}
+		h4{
+			font-family: 'Gobold', sans-serif;
+		    font-size: 24px;
+		    text-transform: uppercase;
+		    letter-spacing: 13px;
+		    span{
+		    	vertical-align: sub;
+		    }
+		}
+		i{
+			font-size: 45px;
+    		float: left;
+		}
+		ul{
+			margin-left: 60px;
+    		padding-left: 11px;
+    		li{
+    			font-size: 18px;
+			    font-family: 'Avenir LT Std', sans-serif;
+			}
+		}
+		.especialidad{
+			font-family: 'Gotham', sans-serif;
+		    font-size: 24px;
+		    text-transform: uppercase;
+		    margin-bottom: 30px;
+		     @media (max-width:1280px){
+		    	font-size: 20px;
+		    }
+		    &:before{
+		    	content: "";
+			    display: inline-block;
+			    height: 3px;
+			    width: 25px;
+			    margin-right: 15px;
+			    text-align: center;
+			    position: relative;
+			    top: -11px;
+			    background-color: black;
+			    @media (max-width:1280px){
+			    	top:-5px;
+			    }
+		    }
+		}
+		.categoria{
+			margin-bottom: 30px;
+			margin-left: -225px;
+			@media (max-width:1680px){
+				margin-left:0px;
+			}
+			hr{
+				border-top: 1px solid rgba(0, 0, 0, 0.3);
+			}
+			p{
+				font-size: 14px;
+			    font-family: 'Gobold';
+			    text-transform: uppercase;
+			    letter-spacing: 7px;
+			    margin-top: -28px;
+			    max-width: 250px;
+			    float: right;
+			    background: white;
+			    @media (max-width:992px){
+					background:$yellow;
+				}
+			    &:before{
+			    	content: "";
+				    display: inline-block;
+				    height: 3px;
+				    width: 52px;
+				    margin-right: 10px;
+				    text-align: center;
+				    position: relative;
+				    top: -4px;
+				    text-align: right;
+				    background-color: #fe0000;
+			    }
+			}
+		}
+		.destinos{
+			margin-top:30px;
+		}
+	}
+}
+
+.quote{
+	background-color:$yellow;
+	padding:100px 18%;
+	color:black;
+		@media (max-width:1480px){
+			padding:100px 5%;
+		}
+		@media (max-width:580px){
+			text-align: center;
+		}
+		span{
+			float:left;
+			@include gotham;
+			font-size:260px;
+			line-height: 200px;
+			@media (max-width:992px){
+				line-height:190px;
+			}
+			@media (max-width:768px){
+				font-size:150px;
+				line-height:195px;
+			}
+			@media (max-width:580px){
+				float:initial;
+				line-height:0;
+				font-size: 110px;
+			}
+		}
+		blockquote{
+			font-size:40px;
+			line-height: 50px;
+			@include gotham;
+			@media (max-width:992px){
+				font-size: 30px;
+    			line-height: 38px;
+			}
+		}
+		.comillas{
+			margin-right: 20px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
